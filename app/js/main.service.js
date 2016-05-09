@@ -48,12 +48,12 @@
 
 
 
-        function getScreenshot() {
+        function getScreenshot(url) {
 
                 var defer = $q.defer();
                 $http({
                     method: 'GET',
-                    url: 'https://aladhan.p.mashape.com/calendarByCity?city=' + newData.location + '&country=' + newData.country + '&month=' + newData.date.substr(5, 2) + '&year=' + newData.date.substr(0, 4)
+                    url: 'https://aladhan.p.mashape.com/calendarByCity?city=' + url
 
 
                 }).then(function(response) {

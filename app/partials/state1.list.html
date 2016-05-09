@@ -1,17 +1,30 @@
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">{{vm.number}}</h3>
-	</div>
-	<div class="panel-body">
-		{{vm.cool}}
-	</div>
-</div>
 
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">Prayer Times</h3>
-	</div>
-	<div class="panel-body">
-		{{vm.cool}}
-	</div>
+<div class="container">
+<div class="panel panel-default col-xs-6">
+    <div class="panel-heading">
+        <h3 class="panel-title">Recorded Attack #{{vm.number}}</h3>
+    </div>
+    <div class="panel-body">
+        Date: {{vm.month}}-{{vm.day}}-{{vm.year}} <br> Country: {{vm.country}} <br> Location: {{vm.location}} <br> Number of deaths: {{vm.deaths}} <br>  {{vm.narrative}} <br>
+        <a target="_blank" href="{{vm.link}}">Link</a>
+    </div>
+</div>
+<div class="panel panel-default col-xs-6">
+    <div class="panel-heading">
+        <h3 class="panel-title">Prayer Times</h3>
+    </div>
+    <div class="panel-body">
+    	Date: {{vm.Prayertimes.data[vm.day-1].date.readable}}
+    	Times: <br>
+    	Fajr: {{vm.Prayertimes.data[vm.day-1].timings.Fajr}} <br>
+    	Sunrise: {{vm.Prayertimes.data[vm.day-1].timings.Sunrise}} <br>
+    	Dhuhr: {{vm.Prayertimes.data[vm.day-1].timings.Dhuhr}} <br>
+    	Asr: {{vm.Prayertimes.data[vm.day-1].timings.Asr}} <br>
+    	Sunset: {{vm.Prayertimes.data[vm.day-1].timings.Sunset}} <br>
+    	Maghrib: {{vm.Prayertimes.data[vm.day-1].timings.Maghrib}} <br>
+    	Isha: {{vm.Prayertimes.data[vm.day-1].timings.Isha}}
+
+       
+    </div>
+</div>
 </div>
