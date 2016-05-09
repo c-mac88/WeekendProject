@@ -1,0 +1,61 @@
+body {
+	background-color: gray;
+}
+
+.page-header {
+	font-family: 'Orbitron', sans-serif;
+	padding: 1%;
+	background-color: #2f4f4f;
+	margin: 0;
+}
+
+.image {
+	display:inline-block;
+	float:left;
+}
+
+.title {
+	display:inline-block;
+}
+
+#topOfPage {
+	margin: 0 5%;
+	padding: 20px;
+}
+
+#seeGridContainer {
+	margin: 0 25% 5%;
+	padding: 25px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 2px;
+	background-color: black;
+}
+
+#about {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 5em;
+	color: gray;
+	padding: 30px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 2px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#seeGrid {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 5em;
+	color: gray;
+	padding: 30px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 2px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+

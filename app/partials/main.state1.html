@@ -1,0 +1,6 @@
+<div id="seeGridContainer" class="container-fluid">
+    <div ng-repeat="strike in vm.newStrikes" class="col-xs-2">
+        <a ui-sref="main.state1.list({deaths:'{{strike.deaths}}', country:'{{strike.country}}', number:'{{strike.number}}', narrative:'{{strike.narrative}}', link:'{{strike.bij_link}}', location:'{{strike.location}}', month:'{{strike.date.substr(5, 2)}}', year:'{{strike.date.substr(0, 4)}}', day:'{{strike.date.substr(8, 2)}}'})"><img height=100 width=100 src="app/images/drone4.png"></a>
+    </div>
+</div>
+<div ui-view></div>

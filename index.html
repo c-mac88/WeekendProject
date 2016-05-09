@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DUDE</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/app/style/style.css">
+    <!-- endinject -->
+</head>
+
+<body>
+    <div class="page-header">
+        <div class="image">
+            <img height=130 width=130 src="app/images/drone4.png">
+        </div>
+        <br>
+        <div class="title">
+            <h1>U.S. Drone Attacks vs. Muslim Prayer Times<br><small>A Display of Findings</small></h1>
+        </div>
+    </div>
+    <div ui-view></div>
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/toastr/toastr.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- inject:js -->
+    <script src="/app/js/app.js"></script>
+    <script src="/app/js/interceptors.js"></script>
+    <script src="/app/js/main.service.js"></script>
+    <script src="/app/js/main.state1.controller.js"></script>
+    <script src="/app/js/main.state1.list.controller.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>
